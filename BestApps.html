@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Best Apps</title>
+	
+<style>
+	
+	 body { z-index:-8;
+  background-image: url("Images/Red Mist.jpg");
+  background-repeat: repeat-y;
+		background-position:center;
+		background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	}
+	
+	#container3
+	{margin:  auto;
+		position: relative;
+		width: auto;
+		height: auto;
+		max-height: 600px;
+		max-width: 300px;
+		background: #4c4c4c;
+		border: solid 10px #2c2c2c;
+		float: right;
+
+  position: relative;
+   right: 37%;/* or right 50% left: -50%;*/
+  text-align: left;
+		margin-top: 15px;
+		
+	}
+	#container4
+	{margin:  auto;
+		position: relative;
+		width: auto;
+		height: auto;
+		max-height: 600px;
+		max-width: 300px;
+		background: #4c4c4c;
+		border: solid 10px #2c2c2c;
+		float: right;
+		margin-top: 15px;
+		right :-15%;
+	}
+	#container5
+	{margin:  auto;
+		position: relative;
+		width: auto;
+		height: auto;
+		max-height: 600px;
+		max-width: 300px;
+		background: #4c4c4c;
+		border: solid 10px #2c2c2c;
+		float: left;
+		margin-top: 15px;
+		left:11%;
+		
+	}
+	.container2 {
+		margin: 0 auto;
+		margin-top: 20px;
+		position: relative;
+		width: 55%;
+		height: 30%;
+		padding-bottom: 35%;
+		background: #4c4c4c;
+		border: solid 10px #2c2c2c;
+	}
+	.slide_img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.slide_img img {
+		width: 100%;
+		height: 100%;
+	}
+	#i1, #i2, #i3 {
+		display: none;
+		
+	}
+	.pre, .nxt {
+		width: 12%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		background: rgba(88, 88, 88, .4);
+		z-index: 99;
+		cursor: pointer;
+	}
+	.pre {
+		left: 0;
+	}
+	.nxt {
+		right: 0;
+	}
+	.nav {
+		width: 100%;
+		height: 11px;
+		bottom: 12%;
+		position: absolute;
+		text-align: center;
+		z-index: 99;
+		margin-left:0px;
+	}
+	.dots {
+		top: -5px;
+		width: 18px;
+		height: 18px;
+		margin: 0 4px;
+		position: relative;
+		border-radius: 50%;
+		display: inline-block;
+		background: rgba(0,0,0,.6);
+	}
+	.slide_img {
+		z-index: -1;
+	}
+	#i1:checked ~ #one,
+	#i2:checked ~ #two,
+	#i3:checked ~ #three
+	{
+		z-index: 9;
+	}
+	#i1:checked ~ .nav #dot1,
+	#i2:checked ~ .nav #dot2,
+	#i3:checked ~ .nav #dot3
+		{
+		background: #fff;
+			
+			
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		#container3, #container4, #container5 {height:auto;
+			width:auto;
+			max-height: 350px;
+		max-width: 175px;
+			line-height:1;
+		list-style:none outside none;
+		padding: 0;
+	
+		position:relative;}
+		
+	header { border-bottom: 5px solid #FEF6C2; }
+		.iframe{margin:left;
+		}
+		}
+
+	
+	@media only screen and (max-width: 768px) {
+		
+	
+		
+		.iframe{margin: left;
+		width: 100em;
+			
+		}
+		
+		#MainMenu, #Menuline,#container3, #container4, #container5 {height:auto;
+			width:auto;
+			max-height: 150px;
+		max-width: 100px;
+			line-height:1;
+		list-style:none outside none;
+		padding: 0;
+	
+		position:relative;
+		clear:left;}
+		
+		body {
+  background-image: url("Images/Red Mist.jpg");
+			height:auto;
+}
+		
+	}
+</style>
+	
+	<link href="main.css" rel="stylesheet"/>
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+  <script>
+  $(document).ready(function(){
+  $("#MenuIcon").click(function(){
+    $("#MainMenu").css("left", "0px");
+    function showMenu(){
+      $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 100% 100%, 0% 100%)");
+      $("#MenuIcon").animate({left:'-100'}, 300);
+    }
+    setTimeout(showMenu, 100);
+  });
+    $("#close").click(function(){
+             $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 0% 0, 100% 100%, 0% 100%)");
+             function hideMenu(){
+                     $("#MainMenu").css("left", "-300px");
+               $("#MenuIcon").animate({left:'50'}, 300);
+      }
+      setTimeout(hideMenu, 300);
+      
+      function originalLayout(){
+              $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 0% 100%, 0% 100%)");
+      }
+      setTimeout(originalLayout, 600);
+    });
+});
+</script>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<div id="wrapper">
+<body background="Images/Red Mist.jpg">
+	
+  <div id="MenuIcon">
+      <div id="MenuLine"></div>
+    </div>
+    
+    <div id="MainMenu">
+      <div id="logo">
+        <img src="Images/logo.jpg" height="75px" width="75px"/>
+      </div>
+      <ul>
+        <li><a href="http://webpage.pace.edu/rs89401p/">HOME</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Technique.html">TECHNIQUE</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/CheckList.html">CHECK LIST</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/StudyTips.html">STUDY TIPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/BestApps.html">BEST APPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Inspiration.html">INSPIRATION</a><div class="line"></div></li>
+      </ul>
+      <div id="close">
+        <img src="Images/Close.jpg" height="30px" width="30px"/>
+      </div>
+    </div>
+	
+	
+	
+<div class="container2">
+	
+	<input type="radio" name="images" id="i1" checked>
+	<input type="radio" name="images" id="i2">
+	<input type="radio" name="images" id="i3">
+
+	<div class="slide_img" id="one">
+		<img src="https://i0.wp.com/www.kermitjones.com/wp-content/uploads/2016/08/todoist.png">
+		
+
+		<label for="i3" class="pre"></label>
+		<label for="i2" class="nxt"></label>
+		
+	</div>
+		
+	<div class="slide_img" id="two">
+		<img src="https://cameronbullock.com/images/icons/Trello%20Logo.png">
+		
+		<label for="i1" class="pre"></label>
+		<label for="i3" class="nxt"></label>
+		
+	</div>
+			
+	<div class="slide_img" id="three">
+		<img src="https://static.airtable.com/images/oembed/airtable.png">
+		
+		<label for="i2" class="pre"></label>
+		<label for="i1" class="nxt"></label>
+		
+	</div>
+	
+	<div class="nav">
+		<label class="dots" id="dot1" for="i1"></label>
+		<label class="dots" id="dot2" for="i2"></label>
+		<label class="dots" id="dot3" for="i3"></label>
+
+	</div>
+	
+	</div>
+	
+
+		<div>
+		
+		<iframe id="container3" width="auto" height="auto" src="https://www.youtube.com/embed/tVooja0Ta5I?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			
+	</div>
+	<div>
+		<iframe id="container4" width="auto" height="auto" src="https://www.youtube.com/embed/HJo5uSYijJ8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+		
+	</div>
+		<div>
+		<iframe id="container5" width="auto" height="auto" src="https://www.youtube.com/embed/-2pUqihxd1M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			
+	</div>
+
+	</div>
+</body>
+</html>

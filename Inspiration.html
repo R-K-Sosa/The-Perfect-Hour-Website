@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inspiration</title>
+  
+<style>
+body  {
+  background-image: url("Images/Red Mist.jpg");
+  background-repeat: repeat;
+
+  }
+
+  #form{
+    float:right;
+    position: relative;
+    padding-top: 150px;
+    padding-right: 75px;
+    position: relative;
+   right: 25%;/* or right 50% left: -50%;*/
+  text-align: center;
+    margin-top: 15px;
+  }
+  h1 {
+    padding-left: 75px;
+    text-align: center;
+  }
+  
+</style>
+  
+  <link href="main.css" rel="stylesheet"/>
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+  <script>
+  $(document).ready(function(){
+  $("#MenuIcon").click(function(){
+    $("#MainMenu").css("left", "0px");
+    function showMenu(){
+      $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 100% 100%, 0% 100%)");
+      $("#MenuIcon").animate({left:'-100'}, 300);
+    }
+    setTimeout(showMenu, 100);
+  });
+    $("#close").click(function(){
+             $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 0% 0, 100% 100%, 0% 100%)");
+             function hideMenu(){
+                     $("#MainMenu").css("left", "-300px");
+               $("#MenuIcon").animate({left:'50'}, 300);
+      }
+      setTimeout(hideMenu, 300);
+      
+      function originalLayout(){
+              $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 0% 100%, 0% 100%)");
+      }
+      setTimeout(originalLayout, 600);
+    });
+});
+    
+    
+    $(document).ready(function(){
+  $('#gallery a').click(function(){
+    var galleryHref = $(this).attr('href');
+    var galleryAlt = $(this).attr('title');
+    $('figure').css('display','none');
+    $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+    $('figcaption').html(galleryAlt);
+    $('figure').fadeToggle(2000);
+     return false;
+  });
+});
+    
+</script>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body background="Images/Red Mist.jpg">
+  
+    
+  
+  <div id="MenuIcon">
+      <div id="MenuLine"></div>
+    </div>
+    
+    <div id="MainMenu">
+      <div id="logo">
+        <img src="Images/logo.jpg" height="75px" width="75px"/>
+      </div>
+      <ul>
+        <li><a href="http://webpage.pace.edu/rs89401p/">HOME</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Technique.html">TECHNIQUE</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/CheckList.html">CHECK LIST</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/StudyTips.html">STUDY TIPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/BestApps.html">BEST APPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Inspiration.html">INSPIRATION</a><div class="line"></div></li>
+      </ul>
+      <div id="close">
+        <img src="Images/Close.jpg" height="30px" width="30px"/>
+      </div>
+    </div>
+<br>
+
+  <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+<!-- Container (Portfolio Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+
+  <h3 class="w3-center"><h1>Inspirational Quotes</h1> </h3>
+
+  <p class="w3-center"><em> <br> </em></p><br>
+
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+  <div class="w3-row-padding w3-center">
+
+    <div class="w3-col m3">
+
+      <img src="Images/timepic8.jpg" style="width:100%" >
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="Images/timepic7.jpg" style="width:100%" >
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="Images/timepic1.jpg" style="width:100%" >
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="Images/timepic2.jpg" style="width:100%" >
+
+    </div>
+
+  </div>
+
+
+
+  <div class="w3-row-padding w3-center w3-section">
+
+    <div class="w3-col m3">
+
+      <img src="Images/timepic3.jpg" style="width:100%" >
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="Images/timepic4.jpg" style="width:100%" >
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="Images/timepic5.jpg" style="width:100%"  >
+
+    </div>
+
+
+
+    <div class="w3-col m3">
+
+      <img src="Images/timepic6.jpg" style="width:100%" >
+
+    </div>
+
+   <div id="form">
+<h3>Want to receive emails from us? <br>Join Our Newsletter<br></h3>
+<form method="get">
+E-mail: <input type="email" name="email" id="email">
+<br>
+<br>
+<input type="submit" value="Sumbit!"> <input type="reset">
+  
+</form>
+
+  </div>
+
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+
+    <img id="img01" class="w3-image">
+
+    <p id="caption" class="w3-opacity w3-large"></p>
+
+  </div>
+
+</div>
+  
+  
+  </div>
+  
+</body>
+</html>

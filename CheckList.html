@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Checklist</title>
+	
+<style>
+body {
+  background-image: url("Images/Red Mist.jpg");
+  background-repeat: no-repeat;
+	
+	height: 100%; 
+	width: 100%; 
+	background-size: 100% 100%;
+}
+	header { 
+		font-size:3em;
+		font-family:arial, sans-serif;
+	}
+	#page-container { 
+        width: auto; 
+        margin: auto; 
+        height:auto;
+	}
+	
+	#contents {margin:auto;
+	
+		position:relative;
+		
+	}
+	#example{margin:auto;
+	
+		position:relative;
+		
+	}
+	
+	#container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 17px;
+  font-family: arial;
+  padding: 25px;
+  color: black;
+}
+
+	ol li{
+		position:relative;
+	}
+    ol lh{
+		position:relative;
+	}
+	#picture{
+		float:left;
+		position:relative;
+		width:auto;
+		height:500px;
+		padding-right:20px;
+	}
+    
+	@media only screen and (max-width: 1024px) {
+		#wrapper { width: auto;
+				min-width: 0;
+				margin: 0;
+				padding: 0;
+				box-shadow: none; 	}
+	header { border-bottom: 5px solid #FEF6C2; }
+
+	}
+	@media only screen and (max-width: 768px) {
+	#contents,#example,#picture,{ height: auto;
+		padding-left: 0.5em; 
+		padding-right: 0.5em; 
+		float:left;}
+		body {
+  background-image: url("Images/Red Mist.jpg");
+			height:auto;
+}
+	}
+	
+</style>
+	
+	<link href="main.css" rel="stylesheet"/>
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+  <script>
+  $(document).ready(function(){
+  $("#MenuIcon").click(function(){
+    $("#MainMenu").css("left", "0px");
+    function showMenu(){
+      $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 100% 100%, 0% 100%)");
+      $("#MenuIcon").animate({left:'-100'}, 300);
+    }
+    setTimeout(showMenu, 100);
+  });
+    $("#close").click(function(){
+             $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 0% 0, 100% 100%, 0% 100%)");
+             function hideMenu(){
+                     $("#MainMenu").css("left", "-300px");
+               $("#MenuIcon").animate({left:'50'}, 300);
+      }
+      setTimeout(hideMenu, 300);
+      
+      function originalLayout(){
+              $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 0% 100%, 0% 100%)");
+      }
+      setTimeout(originalLayout, 600);
+    });
+});
+</script>
+
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body background="Images/Red Mist.jpg">
+	<div id="wrapper">
+		
+  <div id="MenuIcon">
+      <div id="MenuLine"></div>
+    </div>
+    
+    <div id="MainMenu">
+      <div id="logo">
+        <img src="Images/logo.jpg" height="75px" width="75px"/>
+      </div>
+      <ul>
+        <li><a href="http://webpage.pace.edu/rs89401p/">HOME</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Technique.html">TECHNIQUE</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/CheckList.html">CHECK LIST</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/StudyTips.html">STUDY TIPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/BestApps.html">BEST APPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Inspiration.html">INSPIRATION</a><div class="line"></div></li>
+      </ul>
+      <div id="close">
+        <img src="Images/Close.jpg" height="30px" width="30px"/>
+      </div>
+    </div>
+<header align="center">The 1-3-5 Checklist</header>
+	
+	
+		
+		
+	
+		<div id="container">
+			<div id="contents">
+		<h2>Game Plan</h2>
+	<ol>
+		
+	<li>Consider the tasts that need to be done tomorrow, list out each of these tasks on a sheet of paper </li> &nbsp;
+	<li>Think about how long each task will take. Group the tasks by three size categories: Small, Medium, and Large</li> &nbsp;
+	<li>Which of these tasks are most important? Which of these must be done tomorrow and which can wait?</li> &nbsp;
+				</ol>
+		</div>
+
+
+		<div id="contents">
+		<h2>Big Tasks</h2>
+        <ol>
+			
+			<li>Select one big task that you want to get done tomorrow and add it to your checklist. This should be something that will take at least an hour to complete in total and are of high importance. </li> &nbsp;
+			<li>Select the biggest item that you think you can feesably complete given your schedule tomorrow.</li> &nbsp;
+			<li>It may be helpful to break this task down into smaller parts if possible</li> &nbsp;
+		</ol>
+		</div>
+			
+				
+			
+          <div id="contents">
+		<h2>Medium Tasks</h2>
+        <ol>
+			
+			<li>select three medium sized tasks that you would like to complete tomorrow that will fit in your schedule. These should be tasks that will take you about a half hour to complete.  </li> &nbsp;
+			<li>Consider assignments you may have for school. Which assignments have the shortest deadlines? Try to work on assignments that are coming due sooner, this way you won't be working on them at the last second.</li> &nbsp;
+			<li>These three items can also include any time consuming errands you may have to get out of the way.</li> &nbsp;
+		</ol>
+		</div>
+<div id="contents">
+		<h2>Small Tasks</h2>
+        <ol>
+			<li>Select five small tasks that you want to get done tomorrow.</li> &nbsp;
+			<li>If you dont have 5 small things that you have to do, fill it in with things that you WANT to do!</li> &nbsp;
+			<li>These tasks can be small errands, cleaning, quick assignments, or simply leisurely activities!</li> &nbsp;
+            <li>It is important to make sure that while you are getting things done, you are still having a personally fulfilling day.</li> &nbsp;
+		</ol>
+		</div>
+        <div id ="picture">
+					<img src ="http://www.coca-colajourney.com.au/content/dam/journey/au/en/private/2013/04/1-3-5-list-to-do-list-checklist-300-231-300-d7d72ab0.jpg">
+			</div>    
+        <div id="example">
+		<h2>Example</h2>
+        <ol>
+					<lh><b>Big Task:</b></lh>
+		<li>Complete a large textbook assignment for my investments class tonight </li>
+	</ol>
+	<ol>
+		<lh><b>Medium Tasks:</b></lh>
+				<li>Complete part of a presentation for my management class between classes</li>
+				<li>Complete one small section of a paper for my finance class tonight</li>
+				<li>Run to the store and buy groceries on my way home</li>
+		</ol>
+		<ol>
+			<lh><b>Small Tasks:</b></lh>
+				<li>Exercise</li>
+				<li>Cook Dinner</li>
+				<li>Organize my desk</li>
+				<li>Watch an episode on Netflix after my work</li>
+				<li>Start a new book before bed</li>
+	  </ol>	
+     <h2>Note: Make sure you can map out WHEN you will be doing each task!</h2>
+		</div>
+</div>
+	
+</div>
+
+</body>
+</html>

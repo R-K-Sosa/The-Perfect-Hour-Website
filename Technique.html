@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Technique</title>
+	
+<style>
+body {
+  background-image: url("Images/Red Mist.jpg");
+  background-repeat: no-repeat;
+	height: 100%; 
+	width: 100%; 
+	background-size: 100% 100%;
+}
+	h1 {
+		text-align: center;
+	}
+/*TABLET RESPONSIVE FOR TABLETS*/
+@media only screen and (max-width: 1024px) {
+		#wrapper { width: auto;
+				min-width: 0;
+				margin: 0;
+				padding: 0;
+				box-shadow: none; 	}
+	
+	/*MOBILE RESPONSIVE FOR CELL PHONE*/
+	@media only screen and (max-width: 768px) {
+
+	
+	#parallax, #container,{ height: auto;
+		padding-left: 0.5em; 
+		padding-right: 0.5em; }
+		body {
+  background-image: url("Images/Red Mist.jpg");
+			height:auto;
+}
+	}	
+	
+	
+</style>
+	
+  <link href="main.css" rel="stylesheet"/>
+	
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+  <script>
+  $(document).ready(function(){
+  $("#MenuIcon").click(function(){
+    $("#MainMenu").css("left", "0px");
+    function showMenu(){
+      $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 100% 100%, 0% 100%)");
+      $("#MenuIcon").animate({left:'-100'}, 300);
+    }
+    setTimeout(showMenu, 100);
+  });
+    $("#close").click(function(){
+             $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 0% 0, 100% 100%, 0% 100%)");
+             function hideMenu(){
+                     $("#MainMenu").css("left", "-300px");
+               $("#MenuIcon").animate({left:'50'}, 300);
+      }
+      setTimeout(hideMenu, 300);
+      
+      function originalLayout(){
+              $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 0% 100%, 0% 100%)");
+      }
+      setTimeout(originalLayout, 600);
+    });
+});
+</script>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="JavaScript/parallax.min.js"></script>
+	
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	
+<body>
+	<div id="wrapper">
+  <div id="MenuIcon">
+      <div id="MenuLine"></div>
+    </div>
+    
+    <div id="MainMenu">
+      <div id="logo">
+        <img src="logo.jpg" height="75px" width="75px"/>
+      </div>
+      <ul>
+        <li><a href="http://webpage.pace.edu/rs89401p/">HOME</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Technique.html">TECHNIQUE</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/CheckList.html">CHECK LIST</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/StudyTips.html">STUDY TIPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/BestApps.html">BEST APPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Inspiration.html">INSPIRATION</a><div class="line"></div></li>
+      </ul>
+      <div id="close">
+        <img src="Close.jpg" height="30px" width="30px"/>
+      </div>
+    </div>
+    
+	<div class="container">
+		<h1>
+			Technique
+		</h1>
+		<div class="parallax">
+			<p>If you cannot manage an hour, you cannot manage a day, and, therefore, you cannot manage your life. The importance of an hour comes from the law of focus, which means narrowing everything down to a goal you are passionate about achieveing. It is important to get very clear on what you are passionate about in order to choose what activities you will accomplish on a daily basis. Passion comes when you exercise a skill you excel at continuously; it is the feeling of happiness and excitement as a result of becoming better at a skill you enjoy. With the perfect hour method, you allocate a few minutes to every activity that is connected to your passion.</p>
+		<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="Images/sunset.jpg"></div>
+		</div>
+		<p>
+			Everything you do should be centered around your talent or gift that you can do naturally. You have a choice to choose your mentors, friends, books to read, videos to watch, and places to be so everything is aligned with your passion. Everyday, you should practice what you believe will get you closer to becoming better at what you love doing. Filter out what is on your mind by asking yourself:
+			<ol>
+				<li>What is going to bring you closest to your goal</li>
+				<li>In the least amount of time</li>
+				<li>With the least effort</li>
+				<li>And have the greatest long-term impact</li>
+		</ol>
+		</p>
+		<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="Images/london.jpg"></div>
+		<p>
+			All you have to do is master one hour repeatedly and you will master your life. Break up your hour into segments that have timed deadlines for three main goals you want to achieve. This is known as divide and conquer. For example, have a total of five segments that add up to an hour: 
+			<ol>
+				<li>Five minutes to practice learning a language</li>
+				<li>Ten minutes for reading a book</li>
+				<li>Fifteen minutes to practice a skill you care about</li>
+				<li>Twenty minutes doing homework</li>
+				<li>Ten minutes free for anything that can come up such as a phone call, email, lunch etc.</li>
+	</ol> 
+	The key is for you to repeat this same cycle every hour thoughout the day and to make sure all of the important areas of your life are making consistent progress. The above time slots work effectively to make progress for up to three large goals per day. Avoid failure by minimizing your goals to three because people fail from having too many goals.
+	</p>
+		<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="Images/japan.jpg"></div>
+<p>
+	On your perfect hour to do list, you will have goals that move you ahead professionally and are within your power to accomplish now. The steps to prioritize your to do list are as follows:
+		<ol>
+			<li>Capture all</li>
+			<li>Separate now and later</li>
+			<li>Keep only a short list of three large goals per day</li>
+		</ol>
+	To summarize the perfect hour method, choose three main goals about your passion, break them down into smaller tasks, and then allocate time slots for each activity to repeat every hour.
+		</p>
+	</div>
+</div>
+</body>
+</html>

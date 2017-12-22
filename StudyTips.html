@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Study Tips</title>
+  
+<style>
+body {
+  background-image: url("Images/Red Mist.jpg");
+  background-repeat: no-repeat;
+  
+  height: 100%; 
+  width: 100%; 
+  background-size: 100% 100%;
+}
+  header { 
+    font-size:3em;
+    font-family:arial, sans-serif;
+  }
+  #page-container { width: auto; margin: auto; height:auto;
+  }
+  
+  #prep {margin:auto;
+  
+    position:relative;
+    
+  }
+  #review {margin:auto;
+  
+    position:relative;
+  }
+  #memorypalace {
+    
+  max-width:500px;
+    max-height:500px;
+  border:3px solid;
+  padding-left:5px;
+  padding-right:10px;
+  position:relative;
+  float: right;
+    border-color:#FFFFFF
+  }
+  #studymethods{
+    height:auto;
+    width:auto;
+    max-width:450px;
+    
+    border: 2px solid;
+    position:relative;
+    float: left;
+    margin:auto;
+  }
+  
+  #container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 17px;
+  font-family: arial;
+  padding: 25px;
+  color: black;
+}
+
+  ol li{
+    position:relative;
+  }
+  @media only screen and (max-width: 1024px) {
+    #wrapper { width: auto;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;   }
+  header { border-bottom: 5px solid #FEF6C2; }
+
+  }
+  @media only screen and (max-width: 768px) {
+  #studymethods,#memorypalace,#review,#prep,{ height: auto;
+    padding-left: 0.5em; 
+    padding-right: 0.5em; 
+    float:left;}
+    body {
+  background-image: url("Images/Red Mist.jpg");
+      height:auto;
+}
+  }
+  
+</style>
+  
+  <link href="main.css" rel="stylesheet"/>
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+  <script>
+  $(document).ready(function(){
+  $("#MenuIcon").click(function(){
+    $("#MainMenu").css("left", "0px");
+    function showMenu(){
+      $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 100% 100%, 0% 100%)");
+      $("#MenuIcon").animate({left:'-100'}, 300);
+    }
+    setTimeout(showMenu, 100);
+  });
+    $("#close").click(function(){
+             $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 0% 0, 100% 100%, 0% 100%)");
+             function hideMenu(){
+                     $("#MainMenu").css("left", "-300px");
+               $("#MenuIcon").animate({left:'50'}, 300);
+      }
+      setTimeout(hideMenu, 300);
+      
+      function originalLayout(){
+              $("#MainMenu").css("-webkit-clip-path", "polygon(0 0, 100% 0, 0% 100%, 0% 100%)");
+      }
+      setTimeout(originalLayout, 600);
+    });
+});
+</script>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body background="Images/Red Mist.jpg">
+  <div id="wrapper">
+    
+  <div id="MenuIcon">
+      <div id="MenuLine"></div>
+    </div>
+    
+    <div id="MainMenu">
+      <div id="logo">
+        <img src="Images/logo.jpg" height="75px" width="75px"/>
+      </div>
+      <ul>
+        <li><a href="http://webpage.pace.edu/rs89401p/">HOME</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Technique.html">TECHNIQUE</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/CheckList.html">CHECK LIST</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/StudyTips.html">STUDY TIPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/BestApps.html">BEST APPS</a><div class="line"></div></li>
+        <li><a href="http://webpage.pace.edu/rs89401p/Inspiration.html">INSPIRATION</a><div class="line"></div></li>
+      </ul>
+      <div id="close">
+        <img src="Images/Close.jpg" height="30px" width="30px"/>
+      </div>
+    </div>
+<header align="center">Study Tips</header>
+  
+  
+    
+    
+  
+    <div id="container">
+      <div id="prep">
+    <h2>  Prep  </h2>
+  <ol>
+    
+  <li>Do not leave important tasks until the last minute. Divide your studying time over a number of days instead of waiting until the night before. </li> &nbsp;
+  <li>Use time management skills to priortize your obligations. Think about whats most important and least important.Think about how long each task will take and complete obligations according to this importance vs. time principle.</li> &nbsp;
+  <li>To avoid feeling clutterd have enough space to spread out textbooks and notes. Also, make sure you have all your quizzes and assignments with you. There is nothing worse then realizing you've forgotten something while begininng your task</li> &nbsp;
+  <li>Pick a relaxed setting that maximizes your comfort. Everybody has their own special place for studying so this place should be comfortable for YOU!</li> &nbsp;
+  <li>Getting together with friends for a study session is an affective way of testing what you already know! </li> &nbsp;
+        </ol>
+    </div>
+
+
+    <div id="review">
+    <ol>
+      <h2>
+        Review
+      </h2>
+      <li>Create visual aids such as flow charts and diagram. This can help you visualize concepts making it easier to understand </li> &nbsp;
+      <li>Reading topics in the textbook will only help so much. Try studying real questions from past exams</li> &nbsp;
+      <li>Studying continuously might seem like a good idea, but taking regular breaks will help you avoid burning out!</li> &nbsp;
+      <li>Eat a good meal before the test, and snack while studying. Food impacts your energy levels and focus!</li> &nbsp;
+      <li>If your professor offers a review course take full advantage.</li> &nbsp;
+    </ol>
+    </div>
+      <p id="maincontainer">
+        
+      
+<div>
+      <h1>
+        Study Methods
+      </h1>
+      <h4>
+      How To Get The Most Out Of A Cheatsheet
+      </h4>
+      <ol>
+<li><h4>Prepare</h4> The cheat sheet is meant to remember facts, formulas and procedures for you. Understanding what you should and not put on a cheat sheet is crucial.</li>
+<li><h4>Creation</h4>  Space is extremely limited. Format the cheat sheet with a draft so you can manage the space accordingly. Leave room for the things you struggle most to remember.</li>
+<li>  <h4>Implementation</h4> Apply your cheat sheet by doing a mock test exam with practice questions. If needed add or delete information. </li>
+      </ol>
+</ol>
+</div>  
+<div>
+<div>
+  <ol><h1>Memory Palace</h1>
+    <h4>Memory palace is one of the most widely used and effective methods for storing information in your head!</h4>
+    <li>  First you most choose a place that you are most familiar with. Ex. You can choose your home as your “Palace”.</li> &nbsp;
+  <li>Next determine a route through your Palace.  Ex. Walking through your front door into the living room through the dining room to the kitchen,etc. This will help you remember in a specific order.</li> &nbsp;
+  <li>Pay attention to specific features in each room that you will use to substitute what you are trying to learn.</li> &nbsp; 
+<li>The most important part of the technique is to inscribe the palace in your mind. Mentally walk through the palace and identify each element of the palace with the topic you are studying.</li> &nbsp;
+    </p>
+  </ol>
+  
+  </div>
+</div>  
+</div>
+  
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
