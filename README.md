@@ -17,5 +17,11 @@ Time management website using HTML5, CSS3, JQuery, Javascript, and React.
 
 ![image](https://user-images.githubusercontent.com/17933166/34364320-a3737a48-ea52-11e7-9eff-8f2d7a184c1b.png)
 
+# Study Tips
+
+![image](https://user-images.githubusercontent.com/17933166/34364341-eb041354-ea52-11e7-9dbf-76497257cce4.png)
+
+
+
 
 
