@@ -1,5 +1,5 @@
 # The-Perfect-Hour-Website
-Time management website using HTML5, CSS3, JQuery, Javascript, and React.
+Time management website using HTML5, CSS3, JQuery, Javascript, and React: http://webpage.pace.edu/rs89401p/
 
 # Home Page
 
